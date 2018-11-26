@@ -1,0 +1,9 @@
+{
+	"name":"factorymethod",
+	"autoload":{
+		"psr-4":{
+			"app\\":"App",
+			"public\\":"Public"
+		}
+	}
+}

@@ -2,19 +2,20 @@
 
 namespace App;
 
-class ORellyFactoryMethod extends AbstractFactoryMethod{
-	private $context="OReilly";
+class ORellyFactoryMethod extends AbstractFactoryMethod
+{
+	private $context="ORelly";
 	function makePHPBook($param)
 	{
 		$book = null;
 		switch ($param) {
 			case 'us':
-				$book = new OReillyPHPBook;
+				$book = new ORellyPHPBook;
 				break;
-			case 'other'
+			case 'other':
 				$book = new SamsPHPBook;
 			default:
-				$book = new OReillyPHPBook;
+				$book = new ORellyPHPBook;
 			break;
 		}
 		return $book;

@@ -2,7 +2,7 @@
 
 namespace App;
 
-class OReillyPHPBook extends AbstractPHPBook{	
+class ORellyPHPBook extends AbstractPHPBook{	
 	private $author;
 	private $title;
 	private static $oddOrEven = "odd";
@@ -11,14 +11,15 @@ class OReillyPHPBook extends AbstractPHPBook{
 		if('odd' == self::$oddOrEven){
 			$this->author = 'Rasmus Lerdorf and Kevin Tatroe';
 			$this->title = 'Programing PHP';
-			self::$oddOrEven = 'even'
+			self::$oddOrEven = 'even';
 		} else
 		{
 			$this->author = 'David Sklarand Adam Trachtenberg';
 			$this->title = 'PHP Cookbook';
-			self$oddOrEven = 'odd';
+			self::$oddOrEven = 'odd';
 		}
-		function getAuthor(){return $this->author;}
-		function getTitle(){return $this->title;}
-	}
+	}	
+	function getAuthor(){return $this->author;}
+	function getTitle(){return $this->title;}
+	
 }

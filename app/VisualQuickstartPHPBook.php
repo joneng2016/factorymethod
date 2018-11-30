@@ -10,6 +10,6 @@ class VisualQuickstartPHPBook extends AbstractBook{
 		$this->author = 'Larry Ullman';
 		$this->title = 'PHP for the Word Wide Web';
 	}
-	function getAuthor(){return $this->author;};
-	function getTitle(return $this->title;);
+	function getAuthor(){return $this->author;}
+	function getTitle(){return $this->title;}
 }

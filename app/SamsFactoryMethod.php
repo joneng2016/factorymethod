@@ -7,15 +7,15 @@ class SamsFactoryMethod extends AbstractFactoryMethod
 	private $context = "Sams";
 	function makePHPBook($param)	
 	{
-		$book = NULL;
+		$book = "null";
 		switch ($param) 
 		{
 			case "us":
 				$book = new SamsPHPBook;
 			break;
-			case "other"
-				$book = new OReillyPHPBook;
-			case "otherother"
+			case "other":
+				$book = new ORellyPHPBook;
+			case "otherother":
 				$book = new VisualQuickstartPHPBook;
 			break;
 			default:
